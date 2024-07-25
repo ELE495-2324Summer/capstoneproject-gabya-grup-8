@@ -80,7 +80,7 @@ For a video demonstration, visit [YouTube](https://youtu.be/example).
 
 ## Acknowledgements
 Special thanks to the following contributors and resources:
-- [Contributor 1](https://github.com/dusty-nv/jetson-inference)
+- [dusty-nv/jetson-inference](https://github.com/dusty-nv/jetson-inference)
 - [JetBot Documentation](https://jetbot.org/master/index.html)
 - [NVIDIA](https://www.nvidia.com)
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/)
