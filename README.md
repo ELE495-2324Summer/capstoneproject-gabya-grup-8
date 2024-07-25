@@ -73,8 +73,8 @@ To use the project, follow these instructions:
    ```
 
 ## Screenshots
-![JetBot](jetbot.png)
-![Web Interface](interface.png)
+![JetBot](jetbot.jpg)
+![Web Interface](interface.jpg)
 
 For a video demonstration, visit [YouTube](https://youtu.be/example).
 
