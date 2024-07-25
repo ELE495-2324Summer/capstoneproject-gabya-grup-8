@@ -40,31 +40,26 @@ This capstone project aims to develop an autonomous parking system using a JetBo
 To install and set up the project, follow these steps:
 
 1. Clone the project repository:
-   \`\`\`bash
-   git clone https://github.com/username/project-name.git
-   cd project-name
-   \`\`\`
+  ```bash
+   git clone https://github.com/ELE495-2324Summer/capstoneproject-gabya-grup-8.git
+   cd capstoneproject-gabya-grup-8
+   ```
 
 2. Set up the environment:
    - Install necessary dependencies:
-     \`\`\`bash
+     ```bash
      sudo apt-get update
      sudo apt-get install -y python3-pip
      pip3 install -r requirements.txt
-     \`\`\`
+     ```
 
 3. Load the pre-trained models:
    - Download and place the models in the appropriate directory:
-     \`\`\`bash
+     ```bash
      # Example command to download a model
      wget https://path-to-model/best_steering_model_xy_trt.pth -P models/
      wget https://path-to-model/best_model_trt.pth -P models/
-     \`\`\`
-
-4. Run the Flask server:
-   \`\`\`bash
-   python3 app.py
-   \`\`\`
+     ```
 
 ## Usage
 To use the project, follow these instructions:
@@ -72,11 +67,10 @@ To use the project, follow these instructions:
 1. Start the JetBot and ensure it is connected to the network.
 2. Run the Flask server to enable communication with the JetBot.
 3. Use the web interface or API to send commands to the JetBot for navigation and parking.
-
-Example usage for sending a parking command:
-\`\`\`bash
-curl -X POST http://<jetbot-ip>:5000/message -H "Content-Type: application/json" -d '{"message": "1"}'
-\`\`\`
+4. Run the main code:
+   ```bash
+   python3 main.py
+   ```
 
 ## Screenshots
 ![JetBot in action](screenshots/jetbot_parking.png)
@@ -86,7 +80,7 @@ For a video demonstration, visit [YouTube](https://youtu.be/example).
 
 ## Acknowledgements
 Special thanks to the following contributors and resources:
-- [Contributor 1](https://github.com/user1)
+- [Contributor 1](https://github.com/dusty-nv/jetson-inference)
 - [JetBot Documentation](https://jetbot.org/master/index.html)
 - [NVIDIA](https://www.nvidia.com)
 - [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/)
