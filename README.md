@@ -15,7 +15,7 @@ This capstone project aims to develop an autonomous parking system using a JetBo
 ## Features
 - **Hardware:**
   - [NVIDIA Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/)
-  - [JetBot Platform](https://jetbot.org/master/index.html)
+  - [JetBot](https://jetbot.org/master/index.html)
   - CSI Camera
   - Ultrasonic Sensors
   - Motor Driver
