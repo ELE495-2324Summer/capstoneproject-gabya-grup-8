@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/5mCoF9-h)
+
 # TOBB ETÜ ELE495 - Capstone Project
 
 # Table of Contents
@@ -10,32 +10,85 @@
 - [Acknowledgements](#acknowledgements)
 
 ## Introduction
-Provide a brief overview of the project, its purpose, and what problem it aims to solve.
+This capstone project aims to develop an autonomous parking system using a JetBot, powered by NVIDIA Jetson Nano. The primary objective is to design and implement a solution that enables the JetBot to identify designated parking spots and park accurately without human intervention. This project addresses the problem of autonomous vehicle parking, which is a critical component in the development of smart cities and autonomous driving technologies.
 
 ## Features
-List the key features and functionalities of the project.
-- Hardware: The hardware components used (should be listed with links)
-- Operating System and packages
-- Applications 
-- Services 
+- **Hardware:**
+  - [NVIDIA Jetson Nano](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-nano/)
+  - [JetBot Platform](https://jetbot.org/master/index.html)
+  - CSI Camera
+  - Ultrasonic Sensors
+  - Motor Driver
+
+- **Operating System and Packages:**
+  - Ubuntu 18.04
+  - JetPack SDK
+  - PyTorch
+  - Torch2TRT
+  - Flask
+
+- **Applications:**
+  - Real-time object detection
+  - Collision avoidance
+  - Road following
+
+- **Services:**
+  - Flask web server for communication
+  - Deep learning models for navigation and obstacle detection
 
 ## Installation
-Describe the steps required to install and set up the project. Include any prerequisites, dependencies, and commands needed to get the project running.
+To install and set up the project, follow these steps:
 
-```bash
-# Example commands
-git clone https://github.com/username/project-name.git
-cd project-name
-```
+1. Clone the project repository:
+   \`\`\`bash
+   git clone https://github.com/username/project-name.git
+   cd project-name
+   \`\`\`
+
+2. Set up the environment:
+   - Install necessary dependencies:
+     \`\`\`bash
+     sudo apt-get update
+     sudo apt-get install -y python3-pip
+     pip3 install -r requirements.txt
+     \`\`\`
+
+3. Load the pre-trained models:
+   - Download and place the models in the appropriate directory:
+     \`\`\`bash
+     # Example command to download a model
+     wget https://path-to-model/best_steering_model_xy_trt.pth -P models/
+     wget https://path-to-model/best_model_trt.pth -P models/
+     \`\`\`
+
+4. Run the Flask server:
+   \`\`\`bash
+   python3 app.py
+   \`\`\`
 
 ## Usage
-Provide instructions and examples on how to use the project. Include code snippets or screenshots where applicable.
+To use the project, follow these instructions:
+
+1. Start the JetBot and ensure it is connected to the network.
+2. Run the Flask server to enable communication with the JetBot.
+3. Use the web interface or API to send commands to the JetBot for navigation and parking.
+
+Example usage for sending a parking command:
+\`\`\`bash
+curl -X POST http://<jetbot-ip>:5000/message -H "Content-Type: application/json" -d '{"message": "1"}'
+\`\`\`
 
 ## Screenshots
-Include screenshots of the project in action to give a visual representation of its functionality. You can also add videos of running project to YouTube and give a reference to it here. 
+![JetBot in action](screenshots/jetbot_parking.png)
+![Web Interface](screenshots/web_interface.png)
+
+For a video demonstration, visit [YouTube](https://youtu.be/example).
 
 ## Acknowledgements
-Give credit to those who have contributed to the project or provided inspiration. Include links to any resources or tools used in the project.
+Special thanks to the following contributors and resources:
+- [Contributor 1](https://github.com/user1)
+- [JetBot Documentation](https://jetbot.org/master/index.html)
+- [NVIDIA](https://www.nvidia.com)
+- [Flask Documentation](https://flask.palletsprojects.com/en/2.0.x/)
 
-[Contributor 1](https://github.com/user1)
-[Resource or Tool](https://www.nvidia.com)
+This project would not have been possible without the support and resources provided by these individuals and organizations.
