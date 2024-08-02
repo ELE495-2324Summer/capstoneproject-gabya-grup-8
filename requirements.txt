@@ -1,0 +1,13 @@
+Flask==2.0.1
+torch==1.8.1
+torchvision==0.9.1
+torch2trt==0.1.0
+jetson-inference
+jetson-utils
+jetbot==0.4.3
+ipywidgets==7.6.3
+traitlets==5.0.5
+Pillow==8.2.0
+numpy==1.19.4
+Jetson.GPIO==2.0.16
+opencv-python==4.5.3.56
