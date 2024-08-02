@@ -53,13 +53,6 @@ To install and set up the project, follow these steps:
      pip3 install -r requirements.txt
      ```
 
-3. Load the pre-trained models:
-   - Download and place the models in the appropriate directory:
-     ```bash
-     # Example command to download a model
-     wget https://path-to-model/best_steering_model_xy_trt.pth -P models/
-     wget https://path-to-model/best_model_trt.pth -P models/
-     ```
 
 ## Usage
 To use the project, follow these instructions:
