@@ -19,6 +19,7 @@ This capstone project aims to develop an autonomous parking system using a JetBo
   - CSI Camera
   - Ultrasonic Sensors
   - Motor Driver
+  - 2x TC3472 RGB Color sensor 
 
 - **Operating System and Packages:**
   - Ubuntu 18.04
