@@ -53,6 +53,9 @@ To install and set up the project, follow these steps:
      sudo apt-get install -y python3-pip
      pip3 install -r requirements.txt
      ```
+3. Download the models:
+   - https://drive.google.com/drive/folders/1xTBfEoJHLqOazrkhEf3baGVgIXyZR199?usp=sharing
+     
 
 
 ## Usage
