@@ -75,7 +75,7 @@ To use the project, follow these instructions:
 ![JetBot](jetbot.jpg)
 ![Web Interface](interface.jpg)
 
-For a video demonstration, visit [YouTube](https://youtu.be/example).
+For a video demonstration, visit [YouTube](https://www.youtube.com/watch?v=AjrUrU1PWbY)
 
 ## Acknowledgements
 Special thanks to the following contributors and resources:
