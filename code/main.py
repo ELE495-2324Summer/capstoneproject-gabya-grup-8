@@ -431,7 +431,6 @@ time_out_counter=0
 try:
     while True:
         if durum==0:
-            #transmitted_message = f"Kirmiziya Basti {toplamceza}"
             if received_message in ["1","2","3","4","5","6","7","8","9","10"]:
                 OBJECT_LABEL=received_message
                 durum=1
@@ -454,32 +453,24 @@ try:
                 continue
             execute({'new': camera.value})
             time.sleep(0.05)
-            if durum==1: #jetbot yol yakalama
-                #transmitted_message="durum 1"
+            if durum==1: 
                 count=count+1
                 if count==200:
                     durum=2
                     threshold=1
             elif durum==2:
-                #transmitted_message="durum 2"
                 if prob_blocked>0.93:
                     turn_right() 
                     turn_right()
                     durum=3
                     time.sleep(0.3)
             elif durum==3:
-                #transmitted_message="durum 3"
                 if prob_blocked>0.94:
                     turn_right() 
                     turn_right()
                     time.sleep(1)
                 else:
                     if (get_distance_left()//1 in [96,97,78,79,62,61,45,46,28,27]):
-                    #if (95.3<= get_distance_left() <= 96.3 or 
-                     #   78.2 <= get_distance_left() <= 79.5 or 
-                      #  62.5 <= get_distance_left() <= 63.3 or 
-                       # 45.7 <= get_distance_left() <= 46.5 or 
-                        #26.5 <= get_distance_left() <= 27.5):
                         robot.stop()
                         time.sleep(0.2)
                         turn_right()
@@ -527,7 +518,7 @@ try:
                         robot.stop()
 
                         turn_right()
-                        alligning_func() #################################
+                        alligning_func() 
                         robot.forward(0.15)
                         time.sleep(0.5)
                         robot.stop() 
