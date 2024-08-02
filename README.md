@@ -55,7 +55,8 @@ To install and set up the project, follow these steps:
      ```
 3. Download the models:
    - https://drive.google.com/drive/folders/1xTBfEoJHLqOazrkhEf3baGVgIXyZR199?usp=sharing
-     
+
+4. Connect the TCS3472 sensors to Arduino Nano and upload the rgb.txt code.
 
 
 ## Usage
