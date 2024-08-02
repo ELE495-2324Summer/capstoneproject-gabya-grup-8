@@ -57,7 +57,8 @@ To install and set up the project, follow these steps:
    - https://drive.google.com/drive/folders/1xTBfEoJHLqOazrkhEf3baGVgIXyZR199?usp=sharing
 
 4. Connect the TCS3472 sensors to Arduino Nano and upload the rgb.txt code.
-
+5. You can open the code included in the following Goggle Drive link by using Android Studio or similar environment and upload it into your phone:
+[Android Client Code](https://drive.google.com/drive/folders/1LEgfmuh2HmZiYizZXprP404KsQCjhSG1?usp=drive_link)
 
 ## Usage
 To use the project, follow these instructions:
