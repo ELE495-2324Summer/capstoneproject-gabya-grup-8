@@ -54,11 +54,11 @@ To install and set up the project, follow these steps:
      pip3 install -r requirements.txt
      ```
 3. Download the models:
-   - https://drive.google.com/drive/folders/1xTBfEoJHLqOazrkhEf3baGVgIXyZR199?usp=sharing
+   - emiranın_link
 
 4. Connect the TCS3472 sensors to Arduino Nano and upload the rgb.txt code.
 5. You can open the code included in the following Goggle Drive link by using Android Studio or similar environment and upload it into your phone:
-[Android Client Code](https://drive.google.com/drive/folders/1LEgfmuh2HmZiYizZXprP404KsQCjhSG1?usp=drive_link)
+[Android Client Code](alperin_link)
 
 ## Usage
 To use the project, follow these instructions:
